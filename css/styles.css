@@ -1,0 +1,212 @@
+/* Reseteo */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#iniciarsesion {
+    flex-direction: row-reverse;
+}
+#iniciarsesion a {
+    color: rgb(92, 232, 68);
+}
+.empresa {
+    color: black;
+    width: 200px;
+    font-size: 24px;    
+}
+.nav li{
+    margin: 20px;
+    text-decoration: none;  
+}
+.nav {
+    margin: 0px 0px 0px 67px;
+}
+a{
+    text-decoration: none;
+}
+
+header {
+    background-image: url(../recursos/img/tazass.jpg);
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+main{
+    min-height: 554px;
+}
+.fondo {
+    background-image: url(../recursos/img/copass.jpg);
+    background-size: cover;
+    height: 644px;
+}
+
+h2 {
+    color: yellow;
+}
+footer {
+    background-color: rgba(217, 217, 217, 0.45);
+    height: 89px;
+}
+.letras {
+    color: rgb(1, 10, 17);
+}
+img{
+    height: 150px;
+}
+
+#H1 {
+    color: rgb(252, 252, 252);
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.textoamarillo{
+    display: flex;
+    color: yellow;
+    justify-content: center;
+}
+.armatuevento{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+    height: 188px;
+    width: 188px;
+}
+
+.armatuevento img, .consultaarticulos img, .quepasa img{
+    width: 188px;
+    height: 159px;
+    margin: 5px;
+}
+.armatuevento text, .consultaarticulos text, .quepasa text {
+    color: white;
+    justify-content: center;
+    
+
+}
+
+.armatuevento a, .quepasa a, .consultaarticulos a{
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.consultaarticulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 188px;
+    width: 188px;
+    color: wheat;
+}
+.quepasa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 188px;
+    width: 188px;
+    color: wheat;
+}
+.celdas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+    margin: 40px;
+}
+.celdas2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 45px;
+}
+.conocenosmas, .envios {
+    display: flex;
+    flex-direction: column;
+    height: 188px;
+    width: 188px;
+    color: white;
+    text-align: center;
+    
+}
+.conocenosmas img, .envios img {
+    height: 159px;
+    width: 188px;
+    display: flex;
+    
+    
+}
+.conocenosmas a, .envios a {
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fondoatpe {
+    background-image: url(../recursos/img/armatuevento/atpe.jpg);
+    background-size: 100%;
+    background-position:30cm;
+    background-position-x: center;
+}
+.alqartcolumn1 img, .alqartcolumn2 img, .alqartcolumn3 img {
+    width: 93px;
+    height: 88px;
+}
+
+/*  */
+#listaatpe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 150px;
+}
+
+#listaatpe li {
+    list-style: none;
+    width: 150px;
+    margin: 35px;
+    background-color: rgba;
+    /* height: 150px; */
+}
+
+#listaatpe li img{
+    width: 150px;
+    min-height: 200px;
+}
+#consultaarticulos, #atpe {
+    text-align: center;
+}
+.fondofaqs {
+    background: url(../recursos/img/faqs/tazarrota.jpg);
+    background-size: cover;
+    height: 16cm;
+    background-position: 0cm -10cm;
+}
+#faqs {
+    text-align: center;
+}
+
+.preguntas{
+    text-align: center;   
+}
+.preguntas li{
+    margin: 30px;
+    list-style: none;
+}
+
+header *{
+    display: inline;
+}
+.navbarNavAltMarkup {
+    justify-content: space-around;
+    text-decoration-color: black;
+    text-decoration: none;
+    margin: 25px, 25px, 25px,25px;
+}
