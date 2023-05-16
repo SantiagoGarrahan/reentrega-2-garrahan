@@ -4,17 +4,13 @@
     margin: 0px;
 }
 
-
-#iniciarsesion {
-    flex-direction: row-reverse;
-}
-#iniciarsesion a {
-    color: rgb(92, 232, 68);
-}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 .empresa {
     color: black;
     width: 200px;
-    font-size: 24px;    
+    font-size: 24px;
+    margin-left: 20px; 
+    text-decoration: none;  
 }
 .nav li{
     margin: 20px;
@@ -33,9 +29,14 @@ header {
     height: 100px;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
+header *{
+    display: inline;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 main{
     min-height: 554px;
 }
@@ -45,9 +46,12 @@ main{
     height: 644px;
 }
 
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 h2 {
     color: yellow;
 }
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 footer {
     background-color: rgba(217, 217, 217, 0.45);
     height: 89px;
@@ -55,9 +59,13 @@ footer {
 .letras {
     color: rgb(1, 10, 17);
 }
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 img{
     height: 150px;
 }
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 #H1 {
     color: rgb(252, 252, 252);
@@ -69,9 +77,11 @@ h2 {
 
 .textoamarillo{
     display: flex;
-    color: yellow;
+    color: rgb(249, 249, 247);
     justify-content: center;
 }
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 .armatuevento{
     display: flex;
     flex-direction: column-reverse;
@@ -98,14 +108,104 @@ h2 {
     justify-content: center;
     text-align: center;
 }
-.consultaarticulos {
+.fondoatpe {
+    background-image: url(../recursos/img/armatuevento/atpe.jpg);
+    background-size: 100%;
+    background-position:30cm;
+    background-position-x: center;
+}
+.alqartcolumn1 img, .alqartcolumn2 img, .alqartcolumn3 img {
+    width: 93px;
+    height: 88px;
+}
+
+/*  */
+#listaatpe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 150px;
+    gap: 20px;
+    justify-content: center;
+}
+
+#listaatpe div {
+    background-color: lightgrey;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 188px;
-    width: 188px;
-    color: wheat;
+    padding: 15px;
+    justify-content: space-between;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
 }
+
+#listaatpe h2 {
+    list-style: none;
+    width: 150px;
+    margin: 35px;
+    background-color: rgba;
+    /* height: 150px; */
+}
+
+#listaatpe div img{
+    width: 150px;
+    min-height: 200px;
+    object-fit: cover;
+}
+.fondoatpe {
+    background-image: url(../recursos/img/armatuevento/atpe.jpg);
+    background-size: 100%;
+    background-position:30cm;
+    background-position-x: center;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+.fondoca {
+background-image: url(../recursos/img/fondomadera.jpg);
+background-size: 100%;
+}
+
+#consultaarticulos {
+    text-align: center;
+    color: rgb(184, 152, 141);
+    
+}
+#listaca{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 150px;
+    gap: 20px;
+    justify-content: center;
+}
+
+#listaca div {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+#listaca h2 {
+    list-style: none;
+    width: 150px;
+    margin: 35px;
+    background-color: rgba;
+    /* height: 150px; */
+}
+
+#listaca div img{
+    width: 150px;
+    min-height: 200px;
+    object-fit: cover;
+}    
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 .quepasa {
     display: flex;
     flex-direction: column;
@@ -127,6 +227,8 @@ h2 {
     flex-direction: row;
     gap: 45px;
 }
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 .conocenosmas, .envios {
     display: flex;
     flex-direction: column;
@@ -149,64 +251,99 @@ h2 {
     text-decoration: none;
 }
 
-.fondoatpe {
-    background-image: url(../recursos/img/armatuevento/atpe.jpg);
-    background-size: 100%;
-    background-position:30cm;
-    background-position-x: center;
-}
-.alqartcolumn1 img, .alqartcolumn2 img, .alqartcolumn3 img {
-    width: 93px;
-    height: 88px;
-}
-
-/*  */
-#listaatpe{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 100px 150px;
-}
-
-#listaatpe li {
-    list-style: none;
-    width: 150px;
-    margin: 35px;
-    background-color: rgba;
-    /* height: 150px; */
-}
-
-#listaatpe li img{
-    width: 150px;
-    min-height: 200px;
-}
-#consultaarticulos, #atpe {
-    text-align: center;
-}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 .fondofaqs {
-    background: url(../recursos/img/faqs/tazarrota.jpg);
+    background: url(./recursos/img/faqs/tazarrota.jpg);
     background-size: cover;
     height: 16cm;
     background-position: 0cm -10cm;
 }
-#faqs {
+.acordeon {
+    background-color: bisque;
+    color: black;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+.active, .acordeon:hover {
+    background-color: orange;
+}
+.panel {
+    padding: 0px 25px;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+.login {
+    width: 400px;
+    height: 340px;
+    background-color: rgb(79, 78, 78);
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13 px 37 px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+.login h5 {
+    margin: 0;
     text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    color: white;
 }
-
-.preguntas{
-    text-align: center;   
+.cotrols {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-weight: bold;
+    
 }
-.preguntas li{
-    margin: 30px;
-    list-style: none;
+.boton {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    border-bottom: 1px solid;
 }
-
-header *{
-    display: inline;
-}
-.navbarNavAltMarkup {
-    justify-content: space-around;
-    text-decoration-color: black;
-    text-decoration: none;
-    margin: 25px, 25px, 25px,25px;
-}
+.fondoatpe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  #listaatpe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  @media (max-width: 768px) {
+    #listaatpe {
+      grid-template-columns: 1fr;
+    }
+  }
+  #listaatpe {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  #listaca {
+        display: flex;
+        flex-wrap: wrap;
+  }
+  
+  #listaca > div {
+        flex-basis: 25%; /* Esto establece que cada columna ocupe el 25% del ancho disponible */
+        padding: 10px;
+  }
+  
