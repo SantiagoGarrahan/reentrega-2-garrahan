@@ -12,17 +12,62 @@
     margin-left: 20px; 
     text-decoration: none;  
 }
-.nav li{
-    margin: 20px;
-    text-decoration: none;  
-}
-.nav {
+.navmenu {
     margin: 0px 0px 0px 67px;
-}
-a{
-    text-decoration: none;
-}
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+    }
+  
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .menu, li {
+      margin: 5px;
+      text-decoration: none;
 
+    }
+    .textmenu{
+        text-decoration: none;
+        color: #000;
+    }
+  
+    @media (max-width: 768px) {
+      margin: 0;
+      background-color: transparent;
+      box-shadow: none;
+  
+      .menu-icon {
+        display: inline-block;
+        margin-right: 20px;
+      }
+  
+      .menu {
+        display: none;
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      li {
+        display: block;
+        margin: 10px 0;
+      }
+  
+      #menu-toggle:checked + .menu {
+        display: block;
+      }
+    }
+  }
+  
+  
 header {
     background-image: url(../recursos/img/tazass.jpg);
     background-size: cover;
@@ -36,14 +81,32 @@ header *{
     display: inline;
 }
 
+
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
-main{
-    min-height: 554px;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 .fondo {
-    background-image: url(../recursos/img/copass.jpg);
-    background-size: cover;
-    height: 644px;
+  background-image: url(/recursos/img/copass.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
 }
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -82,18 +145,70 @@ h2 {
 }
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
-.armatuevento{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    
-    height: 188px;
-    width: 188px;
-}
+main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  
+    .celdas {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .celdas2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    main {
+      padding: 20px 50px;
+    }
+  
+    .celdas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .celdas2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    main {
+      padding: 20px;
+    }
+  
+    .celdas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  
+    .celdas2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+  
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 .armatuevento img, .consultaarticulos img, .quepasa img{
-    width: 188px;
-    height: 159px;
+    width: 30vw;
+    height: 25vh;
     margin: 5px;
 }
 .armatuevento text, .consultaarticulos text, .quepasa text {
@@ -108,15 +223,13 @@ h2 {
     justify-content: center;
     text-align: center;
 }
-.fondoatpe {
-    background-image: url(../recursos/img/armatuevento/atpe.jpg);
-    background-size: 100%;
-    background-position:30cm;
-    background-position-x: center;
+.armatuevento {
+    display: flex;
+    flex-direction: column;
 }
 .alqartcolumn1 img, .alqartcolumn2 img, .alqartcolumn3 img {
-    width: 93px;
-    height: 88px;
+    width: 10vw;
+    height: 8vh;
 }
 
 /*  */
@@ -139,7 +252,27 @@ h2 {
     align-items: center;
     text-align: center;
 }
-
+.fondoatpe {
+    background-image: url(../recursos/img/fondomadera.jpg);
+    background-size: 100%;
+    min-height: 100vh;
+  }
+  .fondoatpe {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .fondoatpe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+  }
+  .fondoatpe {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+        
 #listaatpe h2 {
     list-style: none;
     width: 150px;
@@ -148,16 +281,9 @@ h2 {
     /* height: 150px; */
 }
 
-#listaatpe div img{
-    width: 150px;
-    min-height: 200px;
-    object-fit: cover;
-}
 .fondoatpe {
-    background-image: url(../recursos/img/armatuevento/atpe.jpg);
+    background-image: url(../recursos/img/fondomadera.jpg);
     background-size: 100%;
-    background-position:30cm;
-    background-position-x: center;
 }
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -165,10 +291,18 @@ h2 {
 background-image: url(../recursos/img/fondomadera.jpg);
 background-size: 100%;
 }
+.consultaarticulos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+    height: 188px;
+    width: 188px;
+}
 
 #consultaarticulos {
     text-align: center;
-    color: rgb(184, 152, 141);
+    color: #000;
     
 }
 #listaca{
@@ -291,7 +425,7 @@ background-size: 100%;
 .login h5 {
     margin: 0;
     text-align: center;
-    height: 40px;
+    height: 0px;
     margin-bottom: 30px;
     border-bottom: 1px solid;
     font-size: 20px;
@@ -346,4 +480,27 @@ background-size: 100%;
         flex-basis: 25%; /* Esto establece que cada columna ocupe el 25% del ancho disponible */
         padding: 10px;
   }
-  
+  .box {
+    background-color: #f1f1f1;
+  }
+  .icono {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    /* Agrega otros estilos necesarios */
+}
+
+.telefono::before {
+    content: "\260E"; /* Código Unicode del ícono de teléfono */
+}
+
+.instagram::before {
+    content: "\f16d"; /* Código Unicode del ícono de Instagram */
+    /* Puedes personalizar los estilos específicos para el ícono de Instagram */
+}
+
+.ubicacion::before {
+    content: "\f041"; /* Código Unicode del ícono de ubicación */
+    /* Puedes personalizar los estilos específicos para el ícono de ubicación */
+}
